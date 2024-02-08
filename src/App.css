@@ -1,42 +1,66 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 5em auto;
+  width: fit-content;
+  gap: 2em;
+}
+
+.heading img {
+  border-radius: 100%;
+  width: 15em;
+  height: 15em;
+}
+
+.heading .title {
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.heading .title h1 {
+  font-size: 4em;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  margin: 0.25em 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.heading .title p {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+  margin: 0.25em 0;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.links {
+  margin: 0 auto;
+  width: fit-content;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.links a {
+  color: var(--violet);
+}
+
+@media screen and (max-width: 840px) {
+  .container {
+    margin: 3em auto;
+    gap: 0.5em;
   }
-  to {
-    transform: rotate(360deg);
+
+  .heading {
+    flex-direction: column;
+    gap: 0;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .heading img {
+    width: 10em;
+    height: 10em;
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
