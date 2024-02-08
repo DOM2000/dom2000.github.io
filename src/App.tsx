@@ -15,6 +15,7 @@ function App() {
         <div className='links'>
           <h2>Contact & Socials</h2>
           <a href="https://github.com/DOM2000">Github</a>
+          <a href="https://discordapp.com/users/969687459006918676">Discord</a>
           <a href="mailto:dom2000js@proton.me">dom2000js@proton.me</a>
         </div>
       </div>
